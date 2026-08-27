@@ -133,8 +133,10 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
 .round-photo { width:220px; aspect-ratio:1; border-radius:50%; }
 .person-info { width:100%; min-width:0; max-width:760px; padding-top:0; }
 .person-info h3 { margin:0 0 10px; color:var(--navy); font:700 1.65rem/1.15 "DM Sans",Arial,sans-serif; }
-.person-name-row { width:100%; display:flex; justify-content:center; align-items:center; }
+.person-name-row { width:100%; display:flex; justify-content:center; align-items:center; gap:9px; }
 .person-name-text { justify-self:center; }
+.person-name-link { color:var(--navy)!important; text-decoration:none!important; }
+.person-name-link:hover { color:var(--blue)!important; text-decoration:underline!important; text-underline-offset:4px; }
 .person-socials { display:flex; align-items:center; justify-content:center; gap:8px; margin:0 0 8px!important; }
 .person-social-link,.person-scholar-link { display:inline-flex; align-items:center; color:var(--blue)!important; font:600 .78rem/1.2 "DM Sans",Arial,sans-serif; text-decoration:none!important; white-space:nowrap; letter-spacing:0; }
 .person-social-link:hover,.person-scholar-link:hover { color:var(--navy)!important; text-decoration:underline!important; text-underline-offset:3px; }
@@ -221,7 +223,7 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
   .people-grid { gap:44px; }
   .director-photo { width:min(100%,260px); }
   .round-photo { width:200px; }
-  .person-name-row { display:flex; flex-direction:column; gap:8px; }
+  .person-name-row { display:flex; flex-direction:row; flex-wrap:wrap; gap:8px; }
   .person-name-text,.person-socials { grid-column:auto; justify-self:center; }
 }
 @media (max-width:520px) {
