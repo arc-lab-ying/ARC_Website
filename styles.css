@@ -106,13 +106,9 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
 .publication-item h3 { display:block; margin:0 0 10px; color:var(--navy); font:700 1.42rem/1.28 "DM Sans",Arial,sans-serif; letter-spacing:0; }
 .publication-venue,.publication-authors,.publication-links { margin:0 0 8px!important; color:#404040!important; font:18px/1.45 "Lora","Times New Roman",serif!important; }
 .publication-venue em { font-style:italic; }
-.publication-links { display:flex; flex-wrap:wrap; gap:0; margin-top:10px!important; font-family:"DM Sans",Arial,sans-serif!important; font-weight:600!important; }
+.publication-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px!important; font-family:"DM Sans",Arial,sans-serif!important; font-weight:600!important; }
 .publication-links a,.publication-links span { color:var(--blue)!important; text-decoration:none!important; }
-.publication-links > a,.publication-links > span { margin-right:10px; }
-.publication-links > a:last-child,.publication-links > span:last-child { margin-right:0; }
 .publication-links a:hover { color:var(--navy)!important; text-decoration:underline!important; text-underline-offset:3px; }
-.publication-links img,.publication-links svg { display:none!important; }
-.publication-links > :has(img),.publication-links > :has(svg) { display:none!important; width:0!important; margin:0!important; padding:0!important; }
 .research-content { max-width:1180px; }
 .research-shell { max-width:1180px; }
 .research-areas h2 { margin-bottom:36px; }
