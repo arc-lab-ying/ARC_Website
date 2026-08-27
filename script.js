@@ -29,8 +29,6 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
   const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
   const captions = Array.from(carousel.querySelectorAll('.carousel-caption'));
   const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
-  const prev = carousel.querySelector('[data-carousel-prev]');
-  const next = carousel.querySelector('[data-carousel-next]');
   let current = Math.max(0, slides.findIndex((slide) => slide.classList.contains('active')));
   let timer;
 
@@ -66,16 +64,6 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
       showSlide(current + 1);
     }, 4200);
   };
-
-  prev?.addEventListener('click', () => {
-    showSlide(current - 1);
-    startAuto();
-  });
-
-  next?.addEventListener('click', () => {
-    showSlide(current + 1);
-    startAuto();
-  });
 
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
