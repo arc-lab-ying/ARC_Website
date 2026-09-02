@@ -81,7 +81,7 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
 .carousel-dot { width:10px; height:10px; padding:0; border:0; border-radius:50%; background:#b9c5ce; cursor:pointer; }
 .carousel-dot.active { background:var(--blue); }
 .page-main { min-height:calc(100vh - 118px); }
-.page-banner { width:100%; padding:52px 28px 44px; background:#f4f7f9; border-bottom:1px solid var(--line); }
+.page-banner { width:100%; padding:52px 0 44px; background:#f4f7f9; border-bottom:1px solid var(--line); }
 .page-banner-inner,.page-content { width:var(--content-width); max-width:980px; margin-inline:auto; }
 .subpage-shell { width:82%; max-width:1080px; margin-inline:auto; }
 .wide-page-shell { max-width:1180px; }
@@ -93,15 +93,14 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
 .content-section { margin-bottom:72px; }
 .content-section:last-child { margin-bottom:0; }
 .publications-content { max-width:1060px; }
-.publication-section h2 { margin:0 0 20px; color:var(--navy); font:700 1.55rem/1.25 "DM Sans",Arial,sans-serif; letter-spacing:0; }
+.publication-section h2 { margin:0; color:var(--navy); font:700 1.55rem/1.25 "DM Sans",Arial,sans-serif; letter-spacing:0; }
 .publication-section { margin-bottom:76px; }
 .publication-section:last-child { margin-bottom:0; }
-.publication-list { display:block; }
-.publication-year { margin:0 0 24px; color:var(--navy); font:700 1.58rem/1.2 "DM Sans",Arial,sans-serif; letter-spacing:0; }
-.publication-year:first-child { margin-top:0; }
-.publication-year:not(:first-child) { margin-top:50px; padding-top:0; border-top:0; }
-.publication-item { margin:0 0 30px; padding-bottom:30px; border-bottom:1px solid var(--line); }
-.publication-item.publication-year-end { margin-bottom:0; padding-bottom:30px; border-bottom:1px solid var(--line); }
+.publication-list { display:grid; gap:48px; }
+.publication-year-group { display:grid; grid-template-columns:112px minmax(0,1fr); column-gap:34px; align-items:start; }
+.publication-year { color:var(--blue); font:700 2.18rem/1 "DM Sans",Arial,sans-serif; letter-spacing:0; }
+.publication-year-items { display:grid; gap:0; min-width:0; }
+.publication-item { margin:0 0 28px; padding-bottom:28px; border-bottom:1px solid var(--line); }
 .publication-item:last-child { padding-bottom:0; border-bottom:0; }
 .publication-item h3 { display:block; margin:0 0 10px; color:var(--navy); font:700 1.42rem/1.28 "DM Sans",Arial,sans-serif; letter-spacing:0; }
 .publication-venue,.publication-authors,.publication-links { margin:0 0 8px!important; color:#404040!important; font:18px/1.45 "Lora","Times New Roman",serif!important; }
@@ -214,6 +213,9 @@ h2 { margin:0; color:var(--navy); font-size:2.35rem; letter-spacing:0; line-heig
   .page-main { min-height:calc(100vh - 76px); }
   .page-banner-inner,.page-content,.subpage-shell { width:86%; }
   .page-banner h1 { font-size:2.35rem; }
+  .publication-list { gap:42px; }
+  .publication-year-group { grid-template-columns:1fr; row-gap:20px; }
+  .publication-year { font-size:1.86rem; }
   .research-area { grid-template-columns:1fr; gap:22px; }
   .research-area-image img { aspect-ratio:16/9; }
   .news-detail-header,.news-detail-body { width:86%; }
